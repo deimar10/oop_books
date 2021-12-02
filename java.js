@@ -7,6 +7,7 @@ for (let key in book) {
 
 // UI object
 const ui = new UI()
+const ls = new LS()
 
 
 
@@ -27,6 +28,7 @@ function addBook(event){
     const book = new Book(title, author, isbn)
     // add book value to visual by UI object
     ui.addBook(book)
+    ls.addBook(book)
 
 
     titleInput.value = "";
