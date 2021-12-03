@@ -14,9 +14,8 @@ class LS {
         localStorage.setItem(name, JSON.stringify(data));
     }
 
-    addBook(title, author, isbn){
+    addBook(book){
         // siin on vaja raamat valmistada
-        let book = [title, author, isbn]
         let books = this.getData('books')
         books.push(book);
         this.setData('books', books);
